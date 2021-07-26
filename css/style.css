@@ -28,6 +28,9 @@ img {
 
 body {
   background-color:  hsl(233, 47%, 7%);
+  min-width: 375px;
+  display: grid;
+  place-items: center;
 }
 
 .card {
@@ -47,6 +50,7 @@ body {
 }
 
 .tint {
+  object-fit: cover;
   position: relative;
   float: left;
   cursor: pointer;
@@ -117,4 +121,24 @@ body {
 .stat_subtitle {
   font-size: 2em;
   font-weight: 700;
+}
+
+
+@media (min-width:730px) {
+  .card {
+    max-width: 730px;
+  }
+}
+
+@media (min-width:1440px) {
+  .card {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1600px;
+  }
+  
+  .stats_container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
