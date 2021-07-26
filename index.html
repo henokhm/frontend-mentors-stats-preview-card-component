@@ -6,33 +6,43 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/style.css">
-  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Stats preview card component</title>
 
 </head>
 <body>
   
   <div class="card">
-    <img class="card_image" src="/images/image-header-mobile.jpg"/>
+    <figure class="tint">
+      <img class="card_image" src="/images/image-header-mobile.jpg"/>
+    </figure>
+
     <div class="card_body">
       <h1 class="card_title">Get <span class="highlight">insights</span> that help your business grow.</h1>
     
       <p class="card_description">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
         experience, and overall efficiency.</p>
     
-      <div class="stat">
-        <span class="stat_title">10k+</span>
-        <span class="stat_subtitle">companies</span>
-      </div>
-      
-      <div class="stat">
-        <span class="stat_title">314</span>
-        <span class="stat_subtitle">templates</span>
-      </div>
-      
-      <div class="stat">
-        <span class="stat_title">12m+</span>
-        <span class="stat_subtitle">queries</span>
+      <div class="stats_container">
+        <div class="stat">
+          <span class="stat_title">companies</span>
+          <span class="stat_subtitle">10k+</span>
+        </div>
+        
+        <div class="stat">
+          <span class="stat_title">templates</span>
+          <span class="stat_subtitle">314</span>
+        </div>
+        
+        <div class="stat">
+          <span class="stat_title">queries</span>
+          <span class="stat_subtitle">12M+</span>
+        </div>
       </div>
     </div>
 
